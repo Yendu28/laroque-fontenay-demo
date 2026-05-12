@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-title-fr="Technologies & Méthode - Laroque &amp; Fontenay" data-title-en="Technologies & Method - Laroque &amp; Fontenay">Technologies & Méthode - Laroque &amp; Fontenay</title>
+<meta name="description" content="Cabinet dentaire d'excellence à Lyon. Implantologie, esthétique dentaire et prothèses.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/editorial-v7.css?v=23">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body class="lang-fr">
+
+<!-- ===== HEADER ===== -->
+<header class="header header-transparent" id="header">
+  <div class="header-inner">
+    <a href="index.html" class="header-logo">
+      <span class="logo-name">Laroque &amp; Fontenay</span>
+      <span class="logo-tagline">
+        <span class="fr">Implantologie · Esthétique · Lyon</span>
+        <span class="en">Implantology · Aesthetics · Lyon</span>
+      </span>
+    </a>
+    <nav class="header-nav" aria-label="Navigation">
+      <button class="nav-btn" data-menu-trigger aria-label="Menu">
+        <span>Menu</span>
+        <span class="hamburger"><i></i><i></i></span>
+      </button>
+      <div class="dropdown" id="servicesDropdown">
+        <button class="nav-btn dropdown-toggle" aria-expanded="false" aria-controls="servicesMenu">
+          <span class="fr">Services</span>
+          <span class="en">Services</span>
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2"/></svg>
+        </button>
+        <div class="dropdown-menu" id="servicesMenu">
+          <a href="implantologie.html" class="fr">Implantologie</a>
+          <a href="implantologie.html" class="en">Implantology</a>
+          <a href="facettes.html" class="fr">Facettes &amp; Esthétique</a>
+          <a href="facettes.html" class="en">Veneers &amp; Aesthetics</a>
+          <a href="protheses.html" class="fr">Prothèses &amp; Restaurations</a>
+          <a href="protheses.html" class="en">Prosthodontics</a>
+        </div>
+      </div>
+    </nav>
+    <div class="header-right">
+      <div class="dropdown" id="phoneDropdown">
+        <button class="nav-btn dropdown-toggle" aria-expanded="false" aria-controls="phoneMenu">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 6C3 6 5 3 9 3C13 3 15 6 15 6M3 6V4H5M3 6H5M15 6V4H13M15 6H13M9 15C12 15 14 13 14 13V11H12M12 11V13H14M9 15V12" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+          04 78 42 15 63
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2"/></svg>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right" id="phoneMenu">
+          <p class="dropdown-number"><a href="tel:+33478421563" style="color:inherit;text-decoration:none;">04 78 42 15 63</a></p>
+          <p class="dropdown-hours">
+            <span class="fr">Lun - Jeu : 9h - 13h &amp; 14h - 18h<br>Ven : 9h - 13h</span>
+            <span class="en">Mon - Thu : 9am - 1pm &amp; 2pm - 6pm<br>Fri : 9am - 1pm</span>
+          </p>
+          <p class="dropdown-emergency">
+            <span class="fr">Urgences : 04 78 42 15 63</span>
+            <span class="en">Emergencies : 04 78 42 15 63</span>
+          </p>
+        </div>
+      </div>
+      <button class="btn-cta" data-modal="consultation">
+        <span class="fr">Réserver un appel</span>
+        <span class="en">Book a call</span>
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5.5" stroke="currentColor"/><path d="M6 4V8M4 6H8" stroke="currentColor" stroke-width="1.2"/></svg>
+      </button>
+      <div class="lang-switch">
+        <button class="lang-btn active" data-lang="fr">FR</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+    <div class="header-right-mobile">
+      <a href="tel:+33478421563" class="header-link-mobile" aria-label="Téléphone">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 6C3 6 5 3 9 3C13 3 15 6 15 6M3 6V4H5M3 6H5M15 6V4H13M15 6H13M9 15C12 15 14 13 14 13V11H12M12 11V13H14M9 15V12" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+      </a>
+      <button class="btn-cta-mobile" data-modal="consultation">
+        <span class="fr">Appel</span>
+        <span class="en">Call</span>
+      </button>
+      <button class="nav-btn" data-menu-trigger aria-label="Menu">
+        <span class="hamburger"><i></i><i></i></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== MENU OVERLAY ===== -->
+<div class="menu-overlay" id="menuOverlay">
+  <div class="menu-overlay-inner">
+    <div class="menu-overlay-top">
+      <a href="index.html" class="menu-logo">Laroque &amp; Fontenay</a>
+      <div class="menu-top-right">
+        <div class="lang-switch lang-switch-light">
+          <button class="lang-btn active" data-lang="fr">FR</button>
+          <span class="lang-sep">|</span>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <button class="menu-close" id="menuClose" aria-label="Fermer">
+          <span class="fr">Fermer</span>
+          <span class="en">Close</span>
+          <span class="close-icon">&times;</span>
+        </button>
+      </div>
+    </div>
+    <div class="menu-overlay-body">
+      <div class="menu-col-left">
+        <div class="menu-socials">
+          <a href="#" class="social-circle" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" class="social-circle" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8C17.5 8 18.5 8.5 19 9.5V9.5M16 8C14.5 8 13.5 8.8 13 10V17M16 8V17M9 11C7.5 11 6.5 11.5 6 12.5V12.5M9 11C10.5 11 11.5 11.8 12 13V17M9 11V17M4 6H4M4 9V17" stroke-linecap="round"/></svg></a>
+        </div>
+        <div class="menu-sep"></div>
+        <a href="faq.html" class="menu-link-sm">
+          <span class="fr">FAQ</span><span class="en">FAQ</span>
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.2"/></svg>
+        </a>
+      </div>
+      <nav class="menu-col-right" aria-label="Menu principal">
+        <a href="services.html" class="menu-nav-link"><span class="fr">Services</span><span class="en">Services</span></a>
+        <a href="cabinet.html" class="menu-nav-link"><span class="fr">Le Cabinet</span><span class="en">The Practice</span></a>
+        <a href="equipe.html" class="menu-nav-link"><span class="fr">L'&Eacute;quipe</span><span class="en">The Team</span></a>
+        <a href="cas-cliniques.html" class="menu-nav-link"><span class="fr">Cas Cliniques</span><span class="en">Clinical Cases</span></a>
+        <a href="technologies.html" class="menu-nav-link"><span class="fr">Technologies &amp; M&eacute;thode</span><span class="en">Technologies &amp; Method</span></a>
+        <a href="contact.html" class="menu-nav-link"><span class="fr">Contact</span><span class="en">Contact</span></a>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<main>
+
+<!-- ===== HERO PAGE NON DÉVELOPPÉE ===== -->
+<section class="contact-hero" style="min-height: 78vh; display: flex; align-items: center; padding: 120px 0 80px;">
+  <div class="container">
+    <div class="contact-hero-content reveal" style="max-width: 720px; margin: 0 auto; text-align: center;">
+
+      <!-- Badge DEMO -->
+      <div style="display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border: 1px solid var(--sage); border-radius: 999px; margin-bottom: 32px;">
+        <span style="width: 6px; height: 6px; border-radius: 50%; background: var(--sage);"></span>
+        <span style="font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--sage);">Démo</span>
+      </div>
+
+      <p class="section-label" style="color: var(--sage);"><span class="fr">TECHNOLOGIES & MÉTHODE</span><span class="en">TECHNOLOGIES & METHOD</span></p>
+      <h1 class="contact-hero-title" style="margin: 0 0 24px;"><span class="fr">Technologies & Méthode</span><span class="en">Technologies & Method</span></h1>
+
+      <p style="font-size: 18px; color: var(--text-secondary); line-height: 1.65; max-width: 560px; margin: 0 auto 16px;">
+        <span class="fr">Page non développée dans ce prototype.</span>
+        <span class="en">Page not developed in this prototype.</span>
+      </p>
+      <p style="font-size: 15px; color: var(--gray); line-height: 1.65; max-width: 560px; margin: 0 auto 48px;">
+        <span class="fr">Cette démonstration se concentre sur la page d'accueil. Les pages internes (services, équipe, cas cliniques, etc.) sont disponibles à la réalisation selon le même standard éditorial.</span>
+        <span class="en">This demonstration focuses on the homepage. Internal pages (services, team, clinical cases, etc.) can be produced to the same editorial standard.</span>
+      </p>
+
+      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+        <a href="index.html" class="btn-cta">
+          <span class="fr">Retour à la démonstration</span>
+          <span class="en">Back to the demo</span>
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M9 3L3 9M3 9V4M3 9H8" stroke="currentColor" stroke-width="1.2"/></svg>
+        </a>
+        <a href="mailto:jeanpaulnabiague@gmail.com?subject=Projet%20site%20cabinet%20dentaire" class="btn-outline">
+          <span class="fr">Discuter d'un projet</span>
+          <span class="en">Discuss a project</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DERRIÈRE CETTE DÉMO ===== -->
+<section style="padding: 80px 0 120px; border-top: 1px solid #E8E4DC;">
+  <div class="container">
+    <div class="reveal" style="max-width: 720px; margin: 0 auto;">
+      <p class="section-label" style="color: var(--gray); text-align: center; margin-bottom: 24px;"><span class="fr">DERRIÈRE CETTE DÉMO</span><span class="en">BEHIND THIS DEMO</span></p>
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 500; line-height: 1.25; color: var(--text-secondary); text-align: center; margin: 0 0 40px;">
+        <span class="fr">Conception &amp; développement freelance</span>
+        <span class="en">Freelance design &amp; development</span>
+      </h2>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px; padding: 32px; border: 1px solid #E8E4DC; border-radius: 4px; background: #FAF8F4;">
+
+        <div>
+          <p style="font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gray); margin: 0 0 8px;"><span class="fr">Auteur</span><span class="en">Author</span></p>
+          <p style="font-size: 16px; color: var(--text-secondary); margin: 0; font-weight: 500;">Yendoubouam Kossi Nabiague</p>
+          <p style="font-size: 14px; color: var(--gray); margin: 4px 0 0;"><span class="fr">Design &amp; développement web</span><span class="en">Web design &amp; development</span></p>
+        </div>
+
+        <div>
+          <p style="font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gray); margin: 0 0 8px;">Contact</p>
+          <p style="margin: 0;">
+            <a href="mailto:jeanpaulnabiague@gmail.com" style="font-size: 15px; color: var(--text-secondary); text-decoration: none; border-bottom: 1px solid var(--gray-light);">jeanpaulnabiague@gmail.com</a>
+          </p>
+          <p style="margin: 10px 0 0;">
+            <a href="https://www.linkedin.com/in/yendoubouam-kossi-nabiague/" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: var(--sage); text-decoration: none; font-weight: 500;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.26 2.37 4.26 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45C23.2 24 24 23.23 24 22.28V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+              LinkedIn
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <p style="text-align: center; font-size: 13px; font-style: italic; color: var(--gray); margin: 32px 0 0;">
+        <span class="fr">Prototype de démonstration · cabinet et personnages fictifs.</span>
+        <span class="en">Demonstration prototype · fictional practice and characters.</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer section-dark">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand">Laroque <span style="color:var(--sage);">&amp;</span> Fontenay</p>
+        <p class="footer-desc"><span class="fr">Cabinet dentaire d'excellence d&eacute;di&eacute; &agrave; l'implantologie, l'esth&eacute;tique dentaire et les soins conservateurs.</span><span class="en">Dental practice of excellence dedicated to implantology, dental aesthetics and conservative care.</span></p>
+        <p class="footer-address">26 quai du G&eacute;n&eacute;ral Sarrail<br>69006 Lyon</p>
+      </div>
+      <div>
+        <p class="footer-col-title"><span class="fr">Soins</span><span class="en">Treatments</span></p>
+        <ul class="footer-links">
+          <li><a href="implantologie.html"><span class="fr">Implantologie</span><span class="en">Implantology</span></a></li>
+          <li><a href="facettes.html"><span class="fr">Facettes</span><span class="en">Veneers</span></a></li>
+          <li><a href="protheses.html"><span class="fr">Proth&egrave;ses</span><span class="en">Prosthodontics</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title"><span class="fr">Cabinet</span><span class="en">Practice</span></p>
+        <ul class="footer-links">
+          <li><a href="equipe.html"><span class="fr">L'&Eacute;quipe</span><span class="en">The Team</span></a></li>
+          <li><a href="cabinet.html"><span class="fr">Le Cabinet</span><span class="en">The Practice</span></a></li>
+          <li><a href="technologies.html"><span class="fr">Technologies</span><span class="en">Technologies</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Newsletter</p>
+        <p class="footer-desc" style="margin-bottom: 16px;"><span class="fr">Restez inform&eacute; de nos actualit&eacute;s et conseils dentaires.</span><span class="en">Stay informed about our news and dental advice.</span></p>
+        <button class="btn-outline btn-outline-light" data-modal="newsletter">Newsletter</button>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; Laroque &amp; Fontenay. <span class="fr">Tous droits r&eacute;serv&eacute;s.</span><span class="en">All rights reserved.</span></p>
+      <div class="footer-bottom-links">
+        <a href="#"><span class="fr">Mentions l&eacute;gales</span><span class="en">Legal notices</span></a>
+        <a href="#"><span class="fr">Confidentialit&eacute;</span><span class="en">Privacy</span></a>
+      </div>
+    </div>
+    <p class="footer-rpps">RPPS : 100012345678</p>
+    <p class="footer-fictif">Site fictif - prototype de d&eacute;monstration</p>
+  </div>
+</footer>
+
+<!-- ===== MODAL OVERLAY ===== -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box" id="modalBox">
+    <button class="modal-close" id="modalClose" aria-label="Fermer">&times;</button>
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+</div>
+
+<div class="page-transition" id="pageTransition"></div>
+
+<script src="js/editorial-v7.js?v=23"></script>
+</body>
+</html>

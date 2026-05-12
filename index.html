@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-title-fr="Laroque &amp; Fontenay - Implantologie &amp; Esthétique Lyon" data-title-en="Laroque &amp; Fontenay - Implantology &amp; Aesthetics Lyon">Laroque &amp; Fontenay - Implantologie &amp; Esthétique Lyon</title>
+<meta name="description" content="Cabinet dentaire d'excellence à Lyon. Implantologie numérique, facettes esthétiques et prothèses sur mesure.">
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23E8E6E1'/%3E%3Ctext x='16' y='21' font-family='Georgia' font-size='16' font-weight='500' fill='%231A1A1A' text-anchor='middle'%3ELF%3C/text%3E%3C/svg%3E">
+<!-- Open Graph -->
+<meta property="og:title" content="Laroque & Fontenay - Implantologie & Esthétique Lyon">
+<meta property="og:description" content="Cabinet dentaire d'excellence. Concevoir des sourires aussi sains que beaux.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yendu28.github.io/laroque-fontenay-demo">
+<meta property="og:image" content="images/cabinet-interieur.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/editorial-v7.css?v=23">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body class="lang-fr">
+
+<!-- ===== LOADER ===== -->
+<div id="pageLoader" class="page-loader">
+  <div class="loader-content">
+    <span class="loader-name">Laroque <span style="color:var(--sage);">&amp;</span> Fontenay</span>
+    <span class="loader-tagline">Implantologie · Esthétique · Lyon</span>
+  </div>
+</div>
+
+<!-- ===== HEADER ===== -->
+<header class="header header-transparent" id="header">
+  <div class="header-inner">
+    <a href="index.html" class="header-logo">
+      <span class="logo-name">Laroque &amp; Fontenay</span>
+      <span class="logo-tagline">
+        <span class="fr">Implantologie · Esthétique · Lyon</span>
+        <span class="en">Implantology · Aesthetics · Lyon</span>
+      </span>
+    </a>
+    <nav class="header-nav" aria-label="Navigation">
+      <button class="nav-btn" data-menu-trigger aria-label="Menu">
+        <span>Menu</span>
+        <span class="hamburger"><i></i><i></i></span>
+      </button>
+      <div class="dropdown" id="servicesDropdown">
+        <button class="nav-btn dropdown-toggle" aria-expanded="false" aria-controls="servicesMenu">
+          <span class="fr">Services</span>
+          <span class="en">Services</span>
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2"/></svg>
+        </button>
+        <div class="dropdown-menu" id="servicesMenu">
+          <a href="implantologie.html" class="fr">Implantologie</a>
+          <a href="implantologie.html" class="en">Implantology</a>
+          <a href="facettes.html" class="fr">Facettes &amp; Esthétique</a>
+          <a href="facettes.html" class="en">Veneers &amp; Aesthetics</a>
+          <a href="protheses.html" class="fr">Prothèses &amp; Restaurations</a>
+          <a href="protheses.html" class="en">Prosthodontics</a>
+        </div>
+      </div>
+    </nav>
+    <div class="header-right">
+      <div class="dropdown" id="phoneDropdown">
+        <button class="nav-btn dropdown-toggle" aria-expanded="false" aria-controls="phoneMenu">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 6C3 6 5 3 9 3C13 3 15 6 15 6M3 6V4H5M3 6H5M15 6V4H13M15 6H13M9 15C12 15 14 13 14 13V11H12M12 11V13H14M9 15V12" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+          04 78 42 15 63
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2"/></svg>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right" id="phoneMenu">
+          <p class="dropdown-number">04 78 42 15 63</p>
+          <p class="dropdown-hours">
+            <span class="fr">Lun - Jeu : 9h - 13h &amp; 14h - 18h<br>Ven : 9h - 13h</span>
+            <span class="en">Mon - Thu : 9am - 1pm &amp; 2pm - 6pm<br>Fri : 9am - 1pm</span>
+          </p>
+          <p class="dropdown-emergency">
+            <span class="fr">Urgences : 04 78 42 15 63</span>
+            <span class="en">Emergencies : 04 78 42 15 63</span>
+          </p>
+        </div>
+      </div>
+      <button class="btn-cta" data-modal="consultation">
+        <span class="fr">Demander une consultation</span>
+        <span class="en">Request a consultation</span>
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5.5" stroke="currentColor"/><path d="M6 4V8M4 6H8" stroke="currentColor" stroke-width="1.2"/></svg>
+      </button>
+      <div class="lang-switch">
+        <button class="lang-btn active" data-lang="fr">FR</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+    <div class="header-right-mobile">
+      <a href="tel:0478421563" class="header-link-mobile" aria-label="Téléphone">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 6C3 6 5 3 9 3C13 3 15 6 15 6M3 6V4H5M3 6H5M15 6V4H13M15 6H13M9 15C12 15 14 13 14 13V11H12M12 11V13H14M9 15V12" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+      </a>
+      <button class="btn-cta-mobile" data-modal="consultation">
+        <span class="fr">Appel</span>
+        <span class="en">Call</span>
+      </button>
+      <button class="nav-btn" data-menu-trigger aria-label="Menu">
+        <span class="hamburger"><i></i><i></i></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== MENU OVERLAY ===== -->
+<div class="menu-overlay" id="menuOverlay">
+  <div class="menu-overlay-inner">
+    <div class="menu-overlay-top">
+      <a href="index.html" class="menu-logo">Laroque &amp; Fontenay</a>
+      <div class="menu-top-right">
+        <div class="lang-switch lang-switch-light">
+          <button class="lang-btn active" data-lang="fr">FR</button>
+          <span class="lang-sep">|</span>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <button class="menu-close" id="menuClose" aria-label="Fermer">
+          <span class="fr">Fermer</span>
+          <span class="en">Close</span>
+          <span class="close-icon">&times;</span>
+        </button>
+      </div>
+    </div>
+    <div class="menu-overlay-body">
+      <div class="menu-col-left">
+        <div class="menu-socials">
+          <a href="#" class="social-circle" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" class="social-circle" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8C17.5 8 18.5 8.5 19 9.5V9.5M16 8C14.5 8 13.5 8.8 13 10V17M16 8V17M9 11C7.5 11 6.5 11.5 6 12.5V12.5M9 11C10.5 11 11.5 11.8 12 13V17M9 11V17M4 6H4M4 9V17" stroke-linecap="round"/></svg></a>
+        </div>
+        <div class="menu-sep"></div>
+        <a href="faq.html" class="menu-link-sm">
+          <span class="fr">FAQ</span><span class="en">FAQ</span>
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.2"/></svg>
+        </a>
+      </div>
+      <nav class="menu-col-right" aria-label="Menu principal">
+        <a href="services.html" class="menu-nav-link"><span class="fr">Services</span><span class="en">Services</span></a>
+        <a href="cabinet.html" class="menu-nav-link"><span class="fr">Le Cabinet</span><span class="en">The Practice</span></a>
+        <a href="equipe.html" class="menu-nav-link"><span class="fr">L'Équipe</span><span class="en">The Team</span></a>
+        <a href="cas-cliniques.html" class="menu-nav-link"><span class="fr">Cas Cliniques</span><span class="en">Clinical Cases</span></a>
+        <a href="technologies.html" class="menu-nav-link"><span class="fr">Technologies &amp; Méthode</span><span class="en">Technologies &amp; Method</span></a>
+        <a href="contact.html" class="menu-nav-link"><span class="fr">Contact</span><span class="en">Contact</span></a>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<main>
+
+<!-- ===== 1. HERO ===== -->
+<section id="hero">
+  <div class="hero-wrapper">
+    <div class="hero-layer">
+      <div class="hero-video-bg">
+        <video autoplay muted loop playsinline class="hero-video" poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect fill='%23E5E2DE' width='1' height='1'/%3E%3C/svg%3E">
+          <source src="images/hero-cabinet.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="hero-right-overlay"></div>
+      <div class="hero-panel-left">
+        <div class="panel-left-content">
+          <div class="hero-locations">
+            <p class="static-line">
+              <span class="fr">Situé à :</span>
+              <span class="en">Located at :</span>
+            </p>
+            <p class="static-line italic">
+              <span class="fr">26 quai du Général Sarrail, 69006 Lyon</span>
+              <span class="en">26 quai du Général Sarrail, 69006 Lyon</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-right-static">
+        <div class="fr">
+          <p class="static-line">Concevoir des sourires</p>
+          <p class="static-line italic">aussi sains que beaux</p>
+        </div>
+        <div class="en">
+          <p class="static-line">Designing smiles</p>
+          <p class="static-line italic">as healthy as they are beautiful</p>
+        </div>
+      </div>
+      <div class="hero-bottom-right-desc">
+        <div class="fr">
+          <p class="static-line">Nous allions expertise chirurgicale</p>
+          <p class="static-line italic">et vision esthétique.</p>
+        </div>
+        <div class="en">
+          <p class="static-line">We combine surgical expertise</p>
+          <p class="static-line italic">and aesthetic vision.</p>
+        </div>
+      </div>
+      <div class="hero-service-labels">
+        <span class="fr">Restauration implantaire</span>
+        <span class="en">Implant Restoration</span>
+        <span class="fr">Esthétique avancée</span>
+        <span class="en">Advanced Esthetics</span>
+        <span class="fr">Dentisterie restauratrice</span>
+        <span class="en">Restorative Dentistry</span>
+      </div>
+      <div class="hero-split-title">
+        <div class="split-line-1">
+          <span class="fr">Implantologie</span>
+          <span class="en">Dental Implants</span>
+        </div>
+        <div class="split-line-2">
+          <span class="split-left"><span class="fr">Restaurations</span><span class="en">Aesthetic</span></span>
+          <span class="split-right italic"><span class="fr">Esthétiques</span><span class="en">Restorations</span></span>
+        </div>
+      </div>
+      <div class="hero-reveal-text">
+        <div class="fr">
+          <p class="reveal-line"><span class="reveal-word">Une</span> <span class="reveal-word">dentisterie</span> <span class="reveal-word">de</span> <span class="reveal-word">précision,</span></p>
+          <p class="reveal-line reveal-line-italic"><span class="reveal-word">pensée</span> <span class="reveal-word">pour</span> <span class="reveal-word">durer</span></p>
+        </div>
+        <div class="en">
+          <p class="reveal-line"><span class="reveal-word">Precision</span> <span class="reveal-word">dentistry,</span></p>
+          <p class="reveal-line reveal-line-italic"><span class="reveal-word">built</span> <span class="reveal-word">to</span> <span class="reveal-word">last</span></p>
+        </div>
+      </div>
+      <div class="hero-scroll-indicator">
+        <span class="scroll-line"></span>
+        <span class="scroll-text"><span class="fr">Découvrir</span><span class="en">Discover</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 2. AU QUOTIDIEN ===== -->
+<section id="stats">
+  <div class="section-header reveal" style="text-align:center;">
+    <p class="section-label"><span class="fr">CE QUE NOUS FAISONS AU QUOTIDIEN</span><span class="en">WHAT WE DO EVERY DAY</span></p>
+    <hr class="section-divider" />
+  </div>
+
+  <div class="stats-marquee-wrap" aria-hidden="false">
+    <div class="stats-marquee-track">
+      <!-- FR x2 -->
+      <span class="stats-marquee-item fr">Ostéo-intégration</span><span class="stats-marquee-sep fr" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item fr">Planification numérique 3D</span><span class="stats-marquee-sep fr" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item fr">Greffe sinusienne</span><span class="stats-marquee-sep fr" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item fr">Chirurgie guidée</span><span class="stats-marquee-sep fr" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item fr">Empreinte intra-orale</span><span class="stats-marquee-sep fr" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item fr">Réhabilitation prothétique</span><span class="stats-marquee-sep fr" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item fr">Couronnes céramo-céramiques</span><span class="stats-marquee-sep fr" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item fr">Régénération osseuse guidée</span><span class="stats-marquee-sep fr" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item fr">Diagnostic CBCT</span><span class="stats-marquee-sep fr" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item fr">Bridges sur implants</span><span class="stats-marquee-sep fr" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item fr">Facettes céramiques</span><span class="stats-marquee-sep fr" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item fr">Suivi post-opératoire</span><span class="stats-marquee-sep fr" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item fr">Ostéo-intégration</span><span class="stats-marquee-sep fr" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item fr">Planification numérique 3D</span><span class="stats-marquee-sep fr" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item fr">Greffe sinusienne</span><span class="stats-marquee-sep fr" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item fr">Chirurgie guidée</span><span class="stats-marquee-sep fr" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item fr">Empreinte intra-orale</span><span class="stats-marquee-sep fr" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item fr">Réhabilitation prothétique</span><span class="stats-marquee-sep fr" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item fr">Couronnes céramo-céramiques</span><span class="stats-marquee-sep fr" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item fr">Régénération osseuse guidée</span><span class="stats-marquee-sep fr" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item fr">Diagnostic CBCT</span><span class="stats-marquee-sep fr" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item fr">Bridges sur implants</span><span class="stats-marquee-sep fr" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item fr">Facettes céramiques</span><span class="stats-marquee-sep fr" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item fr">Suivi post-opératoire</span><span class="stats-marquee-sep fr" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <!-- EN x2 -->
+      <span class="stats-marquee-item en">Osseointegration</span><span class="stats-marquee-sep en" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item en">3D digital planning</span><span class="stats-marquee-sep en" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item en">Sinus lift</span><span class="stats-marquee-sep en" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item en">Guided surgery</span><span class="stats-marquee-sep en" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item en">Intraoral impression</span><span class="stats-marquee-sep en" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item en">Prosthetic rehabilitation</span><span class="stats-marquee-sep en" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item en">All-ceramic crowns</span><span class="stats-marquee-sep en" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item en">Guided bone regeneration</span><span class="stats-marquee-sep en" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item en">CBCT diagnostics</span><span class="stats-marquee-sep en" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item en">Implant-supported bridges</span><span class="stats-marquee-sep en" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item en">Ceramic veneers</span><span class="stats-marquee-sep en" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item en">Post-operative follow-up</span><span class="stats-marquee-sep en" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item en">Osseointegration</span><span class="stats-marquee-sep en" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item en">3D digital planning</span><span class="stats-marquee-sep en" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item en">Sinus lift</span><span class="stats-marquee-sep en" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item en">Guided surgery</span><span class="stats-marquee-sep en" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item en">Intraoral impression</span><span class="stats-marquee-sep en" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item en">Prosthetic rehabilitation</span><span class="stats-marquee-sep en" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item en">All-ceramic crowns</span><span class="stats-marquee-sep en" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item en">Guided bone regeneration</span><span class="stats-marquee-sep en" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item en">CBCT diagnostics</span><span class="stats-marquee-sep en" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item en">Implant-supported bridges</span><span class="stats-marquee-sep en" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item en">Ceramic veneers</span><span class="stats-marquee-sep en" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+      <span class="stats-marquee-item en">Post-operative follow-up</span><span class="stats-marquee-sep en" aria-hidden="true"><svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0L10 7L5 14L0 7L5 0Z" fill="#3D5A4C" opacity="0.75"/></svg></span>
+    </div>
+  </div>
+
+</section>
+
+<!-- ===== 3. ÉQUIPE - SPOTLIGHT CAROUSEL ===== -->
+<section class="section section-beige" id="equipe">
+  <div class="section-header" style="text-align:center;">
+    <p class="section-label">
+      <span class="fr">L'ÉQUIPE</span>
+      <span class="en">THE TEAM</span>
+    </p>
+    <hr class="section-divider" />
+    <h2 class="section-title">
+      <span class="fr">Le même chirurgien du diagnostic au contrôle annuel.</span>
+      <span class="en">The same surgeon from diagnosis to yearly follow-up.</span>
+    </h2>
+  </div>
+
+  <div class="team-spotlight" id="teamSpotlight">
+    <div class="team-spotlight-grid">
+
+      <div class="team-spotlight-main">
+        <div class="team-portrait team-portrait-large">
+          <img id="team-main-img" src="images/dr-laroque.webp" alt="" />
+        </div>
+      </div>
+
+      <div class="team-spotlight-side">
+        <div class="team-card-mini" data-target="1">
+          <div class="team-portrait team-portrait-mini">
+            <img id="team-side1-img" src="images/dr-fontenay.webp" alt="" />
+          </div>
+          <div class="team-info team-info-mini">
+            <p class="team-name-mini" id="team-side1-name">Dr Maëlle Fontenay</p>
+            <p class="team-role-mini">
+              <span class="fr" id="team-side1-role-fr">Restauration esthétique</span>
+              <span class="en" id="team-side1-role-en">Aesthetic restoration</span>
+            </p>
+            <p class="team-desc-mini">
+              <span class="fr" id="team-side1-desc-fr">Elle prend le relais une fois les implants intégrés, et conçoit les couronnes et facettes.</span>
+              <span class="en" id="team-side1-desc-en">She takes over once the implants are integrated, and designs the crowns and veneers.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="team-card-mini" data-target="2">
+          <div class="team-portrait team-portrait-mini">
+            <img id="team-side2-img" src="images/anais-corbin.webp" alt="" />
+          </div>
+          <div class="team-info team-info-mini">
+            <p class="team-name-mini" id="team-side2-name">Anaïs Corbin</p>
+            <p class="team-role-mini">
+              <span class="fr" id="team-side2-role-fr">Coordination patient</span>
+              <span class="en" id="team-side2-role-en">Patient coordination</span>
+            </p>
+            <p class="team-desc-mini">
+              <span class="fr" id="team-side2-desc-fr">Première voix au cabinet, elle vous accompagne entre les rendez-vous.</span>
+              <span class="en" id="team-side2-desc-en">First voice at the practice, she supports you between appointments.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="team-info team-info-main">
+      <div class="team-info-left">
+        <p class="team-name" id="team-main-name">Dr Étienne Laroque</p>
+        <p class="team-role">
+          <span class="fr" id="team-main-role-fr">Implantologie</span>
+          <span class="en" id="team-main-role-en">Implantology</span>
+        </p>
+      </div>
+      <div class="team-info-right">
+        <p class="team-desc">
+          <span class="fr" id="team-main-desc-fr">Vous le rencontrerez lors du diagnostic. C'est lui qui posera vos implants, et c'est lui que vous reverrez chaque année. Vingt ans d'exercice en chirurgie implantaire, une parole simple, et le temps qu'il faut pour répondre à vos questions.</span>
+          <span class="en" id="team-main-desc-en">You will meet him at the diagnostic stage. He will place your implants, and he is the one you will see again each year. Twenty years of implant surgery experience, plain speech, and the time it takes to answer your questions.</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="team-dots" role="tablist" aria-label="Navigation equipe">
+      <button class="team-dot active" data-idx="0" aria-label="Praticien 1"></button>
+      <button class="team-dot" data-idx="1" aria-label="Praticien 2"></button>
+      <button class="team-dot" data-idx="2" aria-label="Praticien 3"></button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 5. SERVICES - 3 CARDS ===== -->
+<section class="section section-beige" id="services">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-label"><span class="fr">CHAMP D'EXERCICE</span><span class="en">SCOPE OF PRACTICE</span></p>
+      <h2 class="section-title"><span class="fr">Restaurer d'abord. Embellir ensuite.</span><span class="en">Restore first. Refine second.</span></h2>
+      <p class="section-subtitle"><span class="fr">Trois actes, classés par ordre de priorité clinique : pas par ordre de prix.</span><span class="en">Three procedures, ordered by clinical priority: not by price.</span></p>
+    </div>
+    <div class="cards-grid">
+      <div class="service-card reveal">
+        <div class="card-img-top">
+          <img src="images/services-implanto.webp" alt="Guide chirurgical d'implantologie" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h4><span class="fr">Implantologie guidée</span><span class="en">Guided implantology</span></h4>
+          <p><span class="fr">Remplacer une dent absente sans toucher aux voisines. Planification CBCT, guide chirurgical imprimé, suites opératoires courtes.</span><span class="en">Replace a missing tooth without touching the neighboring ones. CBCT planning, printed surgical guide, short post-operative recovery.</span></p>
+          <a href="implantologie.html" class="card-link"><span class="fr">Comprendre la chirurgie implantaire</span><span class="en">Understand implant surgery</span> ↗</a>
+        </div>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <div class="card-img-top">
+          <img src="images/services-protheses.webp" alt="Couronne céramique sur implant" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h4><span class="fr">Prothèses sur implant</span><span class="en">Implant-supported prosthetics</span></h4>
+          <p><span class="fr">Couronne unitaire, bridge ou réhabilitation complète. Céramique haute résistance, conception numérique, ajustage manuel au cabinet.</span><span class="en">Single crown, bridge or full-arch rehabilitation. High-strength ceramic, digital design, hand-finished in-house.</span></p>
+          <a href="protheses.html" class="card-link"><span class="fr">Voir les solutions prothétiques</span><span class="en">See prosthetic options</span> ↗</a>
+        </div>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="card-img-top">
+          <img src="images/services-facettes.webp" alt="Facettes céramiques alignées" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h4><span class="fr">Facettes céramiques</span><span class="en">Ceramic veneers</span></h4>
+          <p><span class="fr">Indications précises, préparation minimale ou nulle, résultat ajusté à la morphologie du visage. Une intervention esthétique, jamais cosmétique.</span><span class="en">Precise indications, minimal or no preparation, result calibrated to facial morphology. Aesthetic dentistry: not cosmetic.</span></p>
+          <a href="facettes.html" class="card-link"><span class="fr">Voir l'approche esthétique</span><span class="en">See the aesthetic approach</span> ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 6. MÉTHODE - 4 ÉTAPES ===== -->
+<section class="section section-cream" id="methode">
+  <div class="method-container">
+
+    <div class="method-header reveal">
+      <p class="section-label">
+        <span class="fr">LE PARCOURS PATIENT</span>
+        <span class="en">THE PATIENT PATHWAY</span>
+      </p>
+      <hr class="section-divider section-divider-left" />
+      <h2 class="section-title section-title-left">
+        <span class="fr">Quatre étapes, aucune surprise.</span>
+        <span class="en">Four steps, no surprises.</span>
+      </h2>
+      <p class="section-subtitle section-subtitle-left">
+        <span class="fr">Chaque étape est annoncée, expliquée, et validée avec vous avant de passer à la suivante. C'est la part de la méthode qui ne se voit pas sur un scanner.</span>
+        <span class="en">Each step is announced, explained, and validated with you before moving to the next. It's the part of the method that doesn't show up on a scan.</span>
+      </p>
+    </div>
+
+    <div class="method-timeline">
+
+      <div class="method-step method-step-1 reveal">
+        <div class="method-step-marker"><span class="method-step-circle"></span></div>
+        <p class="method-step-num">01</p>
+        <div class="method-step-titlerow">
+          <h3 class="method-step-title">
+            <span class="fr">Diagnostic</span>
+            <span class="en">Diagnosis</span>
+          </h3>
+          <span class="method-step-duration">
+            <span class="fr">[1 séance]</span>
+            <span class="en">[1 session]</span>
+          </span>
+        </div>
+        <p class="method-step-desc">
+          <span class="fr">Examen clinique, scanner CBCT, empreinte numérique. À la sortie, vous savez ce que vous avez et ce qui est possible.</span>
+          <span class="en">Clinical examination, CBCT scan, digital impression. By the end, you know what you have and what is possible.</span>
+        </p>
+      </div>
+
+      <div class="method-step method-step-2 reveal reveal-delay-1">
+        <div class="method-step-marker"><span class="method-step-circle"></span></div>
+        <p class="method-step-num">02</p>
+        <div class="method-step-titlerow">
+          <h3 class="method-step-title">
+            <span class="fr">Planification</span>
+            <span class="en">Planning</span>
+          </h3>
+          <span class="method-step-duration">
+            <span class="fr">[10 à 15 jours]</span>
+            <span class="en">[10 to 15 days]</span>
+          </span>
+        </div>
+        <p class="method-step-desc">
+          <span class="fr">Modélisation 3D du traitement, devis détaillé, plan présenté en consultation. Rien ne démarre sans votre accord formel.</span>
+          <span class="en">3D treatment modeling, detailed estimate, plan reviewed in consultation. Nothing begins without your formal agreement.</span>
+        </p>
+      </div>
+
+      <div class="method-step method-step-3 reveal reveal-delay-2">
+        <div class="method-step-marker"><span class="method-step-circle"></span></div>
+        <p class="method-step-num">03</p>
+        <div class="method-step-titlerow">
+          <h3 class="method-step-title">
+            <span class="fr">Traitement</span>
+            <span class="en">Treatment</span>
+          </h3>
+          <span class="method-step-duration">
+            <span class="fr">[3 à 6 mois selon le cas]</span>
+            <span class="en">[3 to 6 months, case-dependent]</span>
+          </span>
+        </div>
+        <p class="method-step-desc">
+          <span class="fr">Chirurgie guidée sous anesthésie locale. Couronne définitive réalisée par notre prothésiste partenaire à Lyon. Ajustements au cabinet jusqu'à validation.</span>
+          <span class="en">Guided surgery under local anesthesia. Final crown made by our prosthetist partner in Lyon. In-house adjustments until validated.</span>
+        </p>
+      </div>
+
+      <div class="method-step method-step-4 reveal reveal-delay-3">
+        <div class="method-step-marker"><span class="method-step-circle"></span></div>
+        <p class="method-step-num">04</p>
+        <div class="method-step-titlerow">
+          <h3 class="method-step-title">
+            <span class="fr">Suivi</span>
+            <span class="en">Follow-up</span>
+          </h3>
+          <span class="method-step-duration">
+            <span class="fr">[à vie]</span>
+            <span class="en">[lifetime]</span>
+          </span>
+        </div>
+        <p class="method-step-desc">
+          <span class="fr">Visite de contrôle à 1 mois, 6 mois, puis une fois par an. Le suivi fait partie du traitement, pas d'option à cocher.</span>
+          <span class="en">Check-ups at 1 month, 6 months, then once a year. Follow-up is part of the treatment, not an add-on.</span>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== 7. CAS CLINIQUES ===== -->
+<section class="section section-bone" id="cas-cliniques">
+
+  <div class="section-header reveal" style="text-align:center;">
+    <p class="section-label">
+      <span class="fr">CAS CLINIQUES</span>
+      <span class="en">CLINICAL CASES</span>
+    </p>
+    <hr class="section-divider" />
+    <h2 class="section-title">
+      <span class="fr">Trois cas récents.</span>
+      <span class="en">Three recent cases.</span>
+    </h2>
+    <p class="section-subtitle">
+      <span class="fr">Anonymisés, présentés avec le consentement des patients. Ni avant/après spectaculaire, ni cas trié sur le volet.</span>
+      <span class="en">Anonymized, shared with patient consent. No dramatic before/after, no cherry-picked outcome.</span>
+    </p>
+  </div>
+
+  <div class="cases-spotlight">
+
+    <article class="case-main reveal">
+      <div class="case-main-image">
+        <img src="images/cas-implants.webp" alt="Cas clinique implantologie" loading="lazy" />
+      </div>
+      <div class="case-main-content">
+        <p class="case-tag">
+          <span class="fr">Implantologie</span>
+          <span class="en">Implantology</span>
+        </p>
+        <h3 class="case-title">
+          <span class="fr">Réhabilitation implantaire postérieure</span>
+          <span class="en">Posterior implant rehabilitation</span>
+        </h3>
+        <p class="case-desc">
+          <span class="fr">Femme, 58 ans. Deux implants Straumann en zone molaire, couronnes zircone monolithique. Ostéo-intégration confirmée à 4 mois, mise en charge en mai.</span>
+          <span class="en">Woman, 58. Two Straumann implants in the molar zone, monolithic zirconia crowns. Osseointegration confirmed at 4 months, loading in May.</span>
+        </p>
+      </div>
+    </article>
+
+    <div class="cases-secondary">
+
+      <article class="case-mini reveal reveal-delay-1">
+        <div class="case-mini-image">
+          <img src="images/cas-protheses.webp" alt="Cas clinique prothèses sur implant" loading="lazy" />
+        </div>
+        <div class="case-mini-content">
+          <p class="case-tag">
+            <span class="fr">Prothèses sur implant</span>
+            <span class="en">Implant-supported prosthetics</span>
+          </p>
+          <h3 class="case-mini-title">
+            <span class="fr">Bridge sur 2 implants</span>
+            <span class="en">2-implant bridge</span>
+          </h3>
+          <p class="case-mini-desc">
+            <span class="fr">Homme, 62 ans. Édentement de trois dents adjacentes, deux implants supports d'un bridge céramique. Pas de greffe osseuse nécessaire.</span>
+            <span class="en">Man, 62. Three adjacent missing teeth, two implants supporting a ceramic bridge. No bone graft required.</span>
+          </p>
+        </div>
+      </article>
+
+      <article class="case-mini reveal reveal-delay-2">
+        <div class="case-mini-image">
+          <img src="images/cas-facettes.webp" alt="Cas clinique facettes céramiques" loading="lazy" />
+        </div>
+        <div class="case-mini-content">
+          <p class="case-tag">
+            <span class="fr">Facettes</span>
+            <span class="en">Veneers</span>
+          </p>
+          <h3 class="case-mini-title">
+            <span class="fr">6 facettes céramiques</span>
+            <span class="en">6 ceramic veneers</span>
+          </h3>
+          <p class="case-mini-desc">
+            <span class="fr">Femme, 45 ans. Préparation minimale, harmonie gingivale, teinte ajustée en deux essayages.</span>
+            <span class="en">Woman, 45. Minimal preparation, gingival harmony, shade adjusted over two try-ins.</span>
+          </p>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="cases-cta reveal">
+      <a href="cas-cliniques.html" class="link-arrow">
+        <span class="fr">Voir tous les cas cliniques</span>
+        <span class="en">See all clinical cases</span>
+        <span class="arrow">↗</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== 8. TECHNOLOGIES ===== -->
+<section class="section section-cream" id="technologies">
+  <div class="tech-container">
+
+    <div class="tech-header reveal">
+      <p class="section-label">
+        <span class="fr">PLATEAU TECHNIQUE</span>
+        <span class="en">TECHNICAL PLATFORM</span>
+      </p>
+      <hr class="section-divider section-divider-left" />
+      <h2 class="section-title section-title-left">
+        <span class="fr">Voir avant de couper. Décider avant d'opérer.</span>
+        <span class="en">See before cutting. Decide before operating.</span>
+      </h2>
+      <a href="technologies.html" class="link-arrow tech-cta">
+        <span class="fr">Visiter le plateau technique</span>
+        <span class="en">Visit the technical platform</span>
+        <span class="arrow">↗</span>
+      </a>
+    </div>
+
+    <div class="tech-content reveal reveal-delay-1">
+      <div class="tech-image">
+        <img src="images/tech-plateau.webp" alt="Plateau technique du cabinet" loading="lazy" />
+      </div>
+      <p class="tech-body">
+        <span class="fr">Un implant bien placé commence sur un écran. Imagerie 3D de l'os, empreinte intra-orale sans pâte, planification du traitement validée avant la moindre incision, vision magnifiée pendant l'acte. Le numérique ne remplace pas la main du chirurgien, il enlève l'incertitude qu'il avait autrefois à porter seul.</span>
+        <span class="en">A well-placed implant starts on a screen. 3D bone imaging, paste-free intraoral impression, treatment planning validated before any incision, magnified vision during the procedure. Digital tools do not replace the surgeon's hand, they remove the uncertainty it once had to carry alone.</span>
+      </p>
+      <p class="tech-tools">
+        <span class="tech-tools-label">
+          <span class="fr">Outils utilisés :</span>
+          <span class="en">Tools in use:</span>
+        </span>
+        <span class="tech-tools-list">Carestream CS 9600 (CBCT) · TRIOS 5 3Shape · CoDiagnostiX · Zeiss OPMI</span>
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== 9. TÉMOIGNAGES - MARQUEE FOND NOIR ===== -->
+<section class="section section-dark" id="temoignages">
+  <div class="container temoignages-header">
+    <p class="section-label">
+      <span class="fr">TÉMOIGNAGES</span>
+      <span class="en">TESTIMONIALS</span>
+    </p>
+    <hr class="section-divider" />
+    <h2 class="section-title">
+      <span class="fr">Ce qu'ils disent</span>
+      <span class="en">What they say</span>
+    </h2>
+  </div>
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <div class="marquee-item">
+        <span class="marquee-quote-mark">"</span>
+        <p class="marquee-text"><span class="fr">Le résultat est exactement ce qui m'avait été décrit. La planification 3D m'avait rassuré dès la première consultation.</span><span class="en">The result is exactly what I was told. The 3D planning reassured me from the first consultation.</span></p>
+        <p class="marquee-author">– Marc D., 63 ans</p>
+      </div>
+      <div class="marquee-item">
+        <span class="marquee-quote-mark">"</span>
+        <p class="marquee-text"><span class="fr">J'ai comparé trois cabinets à Lyon. Celui-ci était le seul où l'on m'a expliqué chaque étape avec autant de clarté.</span><span class="en">I compared three practices in Lyon. This was the only one where every step was explained with such clarity.</span></p>
+        <p class="marquee-author">– Isabelle T., 52 ans</p>
+      </div>
+      <div class="marquee-item">
+        <span class="marquee-quote-mark">"</span>
+        <p class="marquee-text"><span class="fr">Mes facettes ont été posées il y a deux ans. Personne ne voit la différence avec mes dents naturelles.</span><span class="en">My veneers were placed two years ago. No one can tell the difference from my natural teeth.</span></p>
+        <p class="marquee-author">– Laurent B., 47 ans</p>
+      </div>
+      <div class="marquee-item">
+        <span class="marquee-quote-mark">"</span>
+        <p class="marquee-text"><span class="fr">Dr. Laroque a pris le temps de tout m'expliquer. La chirurgie s'est déroulée sans la moindre douleur.</span><span class="en">Dr. Laroque took the time to explain everything. The surgery was completely painless.</span></p>
+        <p class="marquee-author">– Claire M., 61 ans</p>
+      </div>
+      <div class="marquee-item">
+        <span class="marquee-quote-mark">"</span>
+        <p class="marquee-text"><span class="fr">J'avais peur que ce soit artificiel. Mes nouvelles dents ressemblent aux miennes, mais en mieux.</span><span class="en">I was afraid it would look artificial. My new teeth look like mine, only better.</span></p>
+        <p class="marquee-author">– Jean-Pierre L., 55 ans</p>
+      </div>
+      <div class="marquee-item">
+        <span class="marquee-quote-mark">"</span>
+        <p class="marquee-text"><span class="fr">Enfin un cabinet où l'on ne se sent pas pressé. L'équipe est rigoureuse et vraiment à l'écoute.</span><span class="en">Finally a practice where you don't feel rushed. The team is rigorous and truly attentive.</span></p>
+        <p class="marquee-author">– Sophie R., 48 ans</p>
+      </div>
+      <!-- Duplicate for seamless loop -->
+      <div class="marquee-item">
+        <span class="marquee-quote-mark">"</span>
+        <p class="marquee-text"><span class="fr">Le résultat est exactement ce qui m'avait été décrit. La planification 3D m'avait rassuré dès la première consultation.</span><span class="en">The result is exactly what I was told. The 3D planning reassured me from the first consultation.</span></p>
+        <p class="marquee-author">– Marc D., 63 ans</p>
+      </div>
+      <div class="marquee-item">
+        <span class="marquee-quote-mark">"</span>
+        <p class="marquee-text"><span class="fr">J'ai comparé trois cabinets à Lyon. Celui-ci était le seul où l'on m'a expliqué chaque étape avec autant de clarté.</span><span class="en">I compared three practices in Lyon. This was the only one where every step was explained with such clarity.</span></p>
+        <p class="marquee-author">– Isabelle T., 52 ans</p>
+      </div>
+      <div class="marquee-item">
+        <span class="marquee-quote-mark">"</span>
+        <p class="marquee-text"><span class="fr">Mes facettes ont été posées il y a deux ans. Personne ne voit la différence avec mes dents naturelles.</span><span class="en">My veneers were placed two years ago. No one can tell the difference from my natural teeth.</span></p>
+        <p class="marquee-author">– Laurent B., 47 ans</p>
+      </div>
+      <div class="marquee-item">
+        <span class="marquee-quote-mark">"</span>
+        <p class="marquee-text"><span class="fr">Dr. Laroque a pris le temps de tout m'expliquer. La chirurgie s'est déroulée sans la moindre douleur.</span><span class="en">Dr. Laroque took the time to explain everything. The surgery was completely painless.</span></p>
+        <p class="marquee-author">– Claire M., 61 ans</p>
+      </div>
+      <div class="marquee-item">
+        <span class="marquee-quote-mark">"</span>
+        <p class="marquee-text"><span class="fr">J'avais peur que ce soit artificiel. Mes nouvelles dents ressemblent aux miennes, mais en mieux.</span><span class="en">I was afraid it would look artificial. My new teeth look like mine, only better.</span></p>
+        <p class="marquee-author">– Jean-Pierre L., 55 ans</p>
+      </div>
+      <div class="marquee-item">
+        <span class="marquee-quote-mark">"</span>
+        <p class="marquee-text"><span class="fr">Enfin un cabinet où l'on ne se sent pas pressé. L'équipe est rigoureuse et vraiment à l'écoute.</span><span class="en">Finally a practice where you don't feel rushed. The team is rigorous and truly attentive.</span></p>
+        <p class="marquee-author">– Sophie R., 48 ans</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 10. FAQ ===== -->
+<section class="section section-cream" id="faq">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-label"><span class="fr">LES QUESTIONS QU'ON NOUS POSE</span><span class="en">WHAT PATIENTS ASK US</span></p>
+      <h2 class="section-title"><span class="fr">Les questions qui reviennent, plus deux que peu de cabinets traitent.</span><span class="en">The questions that come up, plus two that few practices address.</span></h2>
+      <p class="section-subtitle"><span class="fr">Si une question ne figure pas ici, elle trouvera sa place lors de la consultation.</span><span class="en">If your question isn't here, it will find its place during the consultation.</span></p>
+    </div>
+    <div class="faq-wrap">
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">
+          <span class="fr">La pose d'implants est-elle douloureuse ?</span><span class="en">Is implant placement painful?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p><span class="fr">Non. L'intervention se fait sous anesthésie locale. Les suites opératoires sont du même ordre qu'une extraction dentaire et se gèrent avec un antalgique simple. La plupart des patients reprennent leur activité dès le lendemain.</span><span class="en">No. The procedure is done under local anesthesia. Recovery is in line with that of a tooth extraction and is managed with a simple pain reliever. Most patients return to work the next day.</span></p>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">
+          <span class="fr">Quelle est la durée de vie d'un implant ?</span><span class="en">How long does an implant last?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p><span class="fr">Plusieurs décennies, souvent davantage, lorsque l'hygiène quotidienne et le contrôle annuel sont au rendez-vous. L'implant lui-même ne s'use pas ; ce sont les tissus qui l'entourent qui demandent à être suivis.</span><span class="en">Several decades, often longer, when daily hygiene and yearly check-ups are kept. The implant itself does not wear out; it is the surrounding tissue that needs ongoing care.</span></p>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">
+          <span class="fr">Les facettes abîment-elles les dents ?</span><span class="en">Do veneers damage teeth?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p><span class="fr">Une facette moderne demande une préparation minimale, parfois nulle. C'est précisément pour cette raison que l'indication doit être posée avec rigueur : une dent saine ne se touche pas sans nécessité clinique. Le Dr Fontenay privilégie toujours l'approche la plus conservatrice.</span><span class="en">A modern veneer requires minimal preparation, sometimes none at all. That is precisely why the indication must be made with rigor: a healthy tooth should not be touched without clinical need. Dr. Fontenay always favors the least invasive approach.</span></p>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">
+          <span class="fr">Combien de temps dure un traitement implantaire ?</span><span class="en">How long does an implant treatment take?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p><span class="fr">Entre 3 et 6 mois pour un implant unitaire, le temps de l'ostéo-intégration. La chirurgie tient en une séance ; la couronne définitive est posée dans un second temps. Pour les cas complexes (greffe osseuse, plusieurs implants), le calendrier vous est présenté au diagnostic.</span><span class="en">Three to six months for a single implant, the time needed for osseointegration. Surgery takes one session; the final crown is fitted later. For complex cases (bone grafting, multiple implants), the full timeline is shared at the diagnostic stage.</span></p>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">
+          <span class="fr">Le traitement est-il pris en charge ?</span><span class="en">Is the treatment reimbursed?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p><span class="fr">La Sécurité sociale ne rembourse pas l'implant, mais prend en charge une partie de la couronne prothétique. Les mutuelles couvrent une part variable selon le contrat. Nous vous aidons à lire le vôtre. Un devis détaillé, accepté par votre mutuelle avant tout démarrage, vous est systématiquement remis.</span><span class="en">The French national health system does not reimburse the implant itself but covers part of the prosthetic crown. Private health plans cover a variable share depending on the contract. We help you read yours. A detailed estimate, validated by your plan before any work begins, is always provided.</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 11. CTA FOND NOIR ===== -->
+<section class="section section-dark" id="cta-final">
+  <div class="cta-final-grid">
+
+    <div class="cta-final-left reveal">
+      <p class="section-label cta-label">
+        <span class="fr">PREMIÈRE CONSULTATION</span>
+        <span class="en">FIRST CONSULTATION</span>
+      </p>
+      <hr class="section-divider section-divider-left cta-divider" />
+      <h2 class="section-title section-title-left cta-title">
+        <span class="fr">Avant tout traitement, un diagnostic.</span>
+        <span class="en">Before any treatment, a diagnosis.</span>
+      </h2>
+      <p class="section-subtitle section-subtitle-left cta-subtitle">
+        <span class="fr">Un temps d'écoute, un examen complet, un plan de traitement clair. Cabinet ouvert du lundi au jeudi (9h-13h, 14h-18h) et le vendredi matin (9h-13h).</span>
+        <span class="en">Time to listen, a thorough examination, a clear treatment plan. Open Monday to Thursday (9am-1pm, 2pm-6pm) and Friday morning (9am-1pm).</span>
+      </p>
+    </div>
+
+    <div class="cta-final-right reveal reveal-delay-1">
+      <button class="btn-cta cta-final-btn" data-modal="consultation">
+        <span class="fr">Demander une consultation</span>
+        <span class="en">Request a consultation</span>
+        <span class="btn-icon">⊕</span>
+      </button>
+      <p class="cta-phone">
+        <span class="cta-phone-label">
+          <span class="fr">ou appeler le</span>
+          <span class="en">or call us at</span>
+        </span>
+        <a href="tel:+33478421563" class="cta-phone-number">04 78 42 15 63</a>
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== 12. FOOTER ===== -->
+<footer class="footer section-dark">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand">Laroque <span style="color:var(--sage);">&amp;</span> Fontenay</p>
+        <p class="footer-desc"><span class="fr">Cabinet dentaire d'excellence dédié à l'implantologie, l'esthétique dentaire et les soins conservateurs.</span><span class="en">Dental practice of excellence dedicated to implantology, dental aesthetics and conservative care.</span></p>
+        <p class="footer-address">26 quai du Général Sarrail<br>69006 Lyon</p>
+      </div>
+      <div>
+        <p class="footer-col-title"><span class="fr">Soins</span><span class="en">Treatments</span></p>
+        <ul class="footer-links">
+          <li><a href="implantologie.html"><span class="fr">Implantologie</span><span class="en">Implantology</span></a></li>
+          <li><a href="facettes.html"><span class="fr">Facettes</span><span class="en">Veneers</span></a></li>
+          <li><a href="protheses.html"><span class="fr">Prothèses</span><span class="en">Prosthodontics</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title"><span class="fr">Cabinet</span><span class="en">Practice</span></p>
+        <ul class="footer-links">
+          <li><a href="equipe.html"><span class="fr">L'Équipe</span><span class="en">The Team</span></a></li>
+          <li><a href="cabinet.html"><span class="fr">Le Cabinet</span><span class="en">The Practice</span></a></li>
+          <li><a href="technologies.html"><span class="fr">Technologies</span><span class="en">Technologies</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Newsletter</p>
+        <p class="footer-desc" style="margin-bottom: 16px;"><span class="fr">Restez informé de nos actualités et conseils dentaires.</span><span class="en">Stay informed about our news and dental advice.</span></p>
+        <button class="btn-outline btn-outline-light" data-modal="newsletter">Newsletter</button>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; Laroque &amp; Fontenay. <span class="fr">Tous droits réservés.</span><span class="en">All rights reserved.</span></p>
+      <div class="footer-bottom-links">
+        <a href="#"><span class="fr">Mentions légales</span><span class="en">Legal notices</span></a>
+        <a href="#"><span class="fr">Confidentialité</span><span class="en">Privacy</span></a>
+      </div>
+    </div>
+    <p class="footer-rpps">RPPS : 100012345678</p>
+    <p class="footer-fictif">Site fictif - prototype de démonstration</p>
+  </div>
+</footer>
+
+<!-- ===== MODALS ===== -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box" id="modalBox">
+    <button class="modal-close" id="modalClose" aria-label="Fermer">&times;</button>
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+</div>
+
+<div class="page-transition" id="pageTransition"></div>
+
+<script src="js/editorial-v7.js?v=23"></script>
+</body>
+</html>

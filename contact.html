@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-title-fr="Contact - Laroque &amp; Fontenay" data-title-en="Contact - Laroque &amp; Fontenay">Contact - Laroque &amp; Fontenay</title>
+<meta name="description" content="Prenez rendez-vous au cabinet Laroque &amp; Fontenay à Lyon. Implantologie, esthétique dentaire et prothèses.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/editorial-v7.css?v=23">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body class="lang-fr">
+
+<!-- ===== HEADER ===== -->
+<header class="header header-transparent" id="header">
+  <div class="header-inner">
+    <a href="index.html" class="header-logo">
+      <span class="logo-name">Laroque &amp; Fontenay</span>
+      <span class="logo-tagline">
+        <span class="fr">Implantologie · Esthétique · Lyon</span>
+        <span class="en">Implantology · Aesthetics · Lyon</span>
+      </span>
+    </a>
+    <nav class="header-nav" aria-label="Navigation">
+      <button class="nav-btn" data-menu-trigger aria-label="Menu">
+        <span>Menu</span>
+        <span class="hamburger"><i></i><i></i></span>
+      </button>
+      <div class="dropdown" id="servicesDropdown">
+        <button class="nav-btn dropdown-toggle" aria-expanded="false" aria-controls="servicesMenu">
+          <span class="fr">Services</span>
+          <span class="en">Services</span>
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2"/></svg>
+        </button>
+        <div class="dropdown-menu" id="servicesMenu">
+          <a href="implantologie.html" class="fr">Implantologie</a>
+          <a href="implantologie.html" class="en">Implantology</a>
+          <a href="facettes.html" class="fr">Facettes &amp; Esthétique</a>
+          <a href="facettes.html" class="en">Veneers &amp; Aesthetics</a>
+          <a href="protheses.html" class="fr">Prothèses &amp; Restaurations</a>
+          <a href="protheses.html" class="en">Prosthodontics</a>
+        </div>
+      </div>
+    </nav>
+    <div class="header-right">
+      <div class="dropdown" id="phoneDropdown">
+        <button class="nav-btn dropdown-toggle" aria-expanded="false" aria-controls="phoneMenu">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 6C3 6 5 3 9 3C13 3 15 6 15 6M3 6V4H5M3 6H5M15 6V4H13M15 6H13M9 15C12 15 14 13 14 13V11H12M12 11V13H14M9 15V12" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+          04 78 42 15 63
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.2"/></svg>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right" id="phoneMenu">
+          <p class="dropdown-number"><a href="tel:+33478421563" style="color:inherit;text-decoration:none;">04 78 42 15 63</a></p>
+          <p class="dropdown-hours">
+            <span class="fr">Lun - Jeu : 9h - 13h &amp; 14h - 18h<br>Ven : 9h - 13h</span>
+            <span class="en">Mon - Thu : 9am - 1pm &amp; 2pm - 6pm<br>Fri : 9am - 1pm</span>
+          </p>
+          <p class="dropdown-emergency">
+            <span class="fr">Urgences : 04 78 42 15 63</span>
+            <span class="en">Emergencies : 04 78 42 15 63</span>
+          </p>
+        </div>
+      </div>
+      <button class="btn-cta" data-modal="consultation">
+        <span class="fr">Réserver un appel</span>
+        <span class="en">Book a call</span>
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5.5" stroke="currentColor"/><path d="M6 4V8M4 6H8" stroke="currentColor" stroke-width="1.2"/></svg>
+      </button>
+      <div class="lang-switch">
+        <button class="lang-btn active" data-lang="fr">FR</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+    <div class="header-right-mobile">
+      <a href="tel:+33478421563" class="header-link-mobile" aria-label="Téléphone">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 6C3 6 5 3 9 3C13 3 15 6 15 6M3 6V4H5M3 6H5M15 6V4H13M15 6H13M9 15C12 15 14 13 14 13V11H12M12 11V13H14M9 15V12" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+      </a>
+      <button class="btn-cta-mobile" data-modal="consultation">
+        <span class="fr">Appel</span>
+        <span class="en">Call</span>
+      </button>
+      <button class="nav-btn" data-menu-trigger aria-label="Menu">
+        <span class="hamburger"><i></i><i></i></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== MENU OVERLAY ===== -->
+<div class="menu-overlay" id="menuOverlay">
+  <div class="menu-overlay-inner">
+    <div class="menu-overlay-top">
+      <a href="index.html" class="menu-logo">Laroque &amp; Fontenay</a>
+      <div class="menu-top-right">
+        <div class="lang-switch lang-switch-light">
+          <button class="lang-btn active" data-lang="fr">FR</button>
+          <span class="lang-sep">|</span>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <button class="menu-close" id="menuClose" aria-label="Fermer">
+          <span class="fr">Fermer</span>
+          <span class="en">Close</span>
+          <span class="close-icon">&times;</span>
+        </button>
+      </div>
+    </div>
+    <div class="menu-overlay-body">
+      <div class="menu-col-left">
+        <div class="menu-socials">
+          <a href="#" class="social-circle" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" class="social-circle" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8C17.5 8 18.5 8.5 19 9.5V9.5M16 8C14.5 8 13.5 8.8 13 10V17M16 8V17M9 11C7.5 11 6.5 11.5 6 12.5V12.5M9 11C10.5 11 11.5 11.8 12 13V17M9 11V17M4 6H4M4 9V17" stroke-linecap="round"/></svg></a>
+        </div>
+        <div class="menu-sep"></div>
+        <a href="faq.html" class="menu-link-sm">
+          <span class="fr">FAQ</span><span class="en">FAQ</span>
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 9L9 3M9 3H4M9 3V8" stroke="currentColor" stroke-width="1.2"/></svg>
+        </a>
+      </div>
+      <nav class="menu-col-right" aria-label="Menu principal">
+        <a href="services.html" class="menu-nav-link"><span class="fr">Services</span><span class="en">Services</span></a>
+        <a href="cabinet.html" class="menu-nav-link"><span class="fr">Le Cabinet</span><span class="en">The Practice</span></a>
+        <a href="equipe.html" class="menu-nav-link"><span class="fr">L'Équipe</span><span class="en">The Team</span></a>
+        <a href="cas-cliniques.html" class="menu-nav-link"><span class="fr">Cas Cliniques</span><span class="en">Clinical Cases</span></a>
+        <a href="technologies.html" class="menu-nav-link"><span class="fr">Technologies &amp; Méthode</span><span class="en">Technologies &amp; Method</span></a>
+        <a href="contact.html" class="menu-nav-link"><span class="fr">Contact</span><span class="en">Contact</span></a>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<main>
+
+<!-- ===== 1. HERO CONTACT ===== -->
+<section class="contact-hero">
+  <div class="container">
+    <div class="contact-hero-content reveal">
+      <p class="section-label" style="color: var(--sage);"><span class="fr">CONTACT</span><span class="en">CONTACT</span></p>
+      <h1 class="contact-hero-title"><span class="fr">Prenez le temps d'une première évaluation</span><span class="en">Take the time for a first evaluation</span></h1>
+      <p class="contact-hero-subtitle">
+        <span class="fr">La première consultation permet d'établir un diagnostic précis, de comprendre votre situation et de vous présenter les options adaptées. Durée : 45 minutes.</span>
+        <span class="en">The initial consultation allows us to establish a precise diagnosis, understand your situation, and present the options suited to you. Duration: 45 minutes.</span>
+      </p>
+      <button class="btn-cta" onclick="document.getElementById('modal-proto').classList.add('open'); document.body.style.overflow='hidden';" style="margin-top: 32px;">
+        <span class="fr">Réserver un appel</span>
+        <span class="en">Book a call</span>
+        <svg width="14" height="14" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5.5" stroke="currentColor"/><path d="M6 4V8M4 6H8" stroke="currentColor" stroke-width="1.2"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 2. COORDONNÉES & FORMULAIRE ===== -->
+<section class="contact-main">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- COLONNE GAUCHE - Coordonnées -->
+      <div class="contact-info reveal">
+        <p class="section-label"><span class="fr">COORDONNÉES</span><span class="en">DETAILS</span></p>
+        <h2 class="section-title" style="margin-bottom: 40px;"><span class="fr">Nous trouver</span><span class="en">Find us</span></h2>
+
+        <div class="contact-info-list">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8 2 5 5 5 9C5 14 12 22 12 22C12 22 19 14 19 9C19 5 16 2 12 2Z"/><circle cx="12" cy="9" r="3"/></svg>
+            </div>
+            <div class="contact-info-body">
+              <p class="contact-info-label"><span class="fr">Adresse</span><span class="en">Address</span></p>
+              <p class="contact-info-value">26 quai du Général Sarrail, 69006 Lyon</p>
+              <p class="contact-info-hint"><span class="fr">Lyon 6ème - Face à la Saône</span><span class="en">Lyon 6th - Facing the Saône</span></p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6C3 6 5 3 9 3C13 3 15 6 15 6M3 6V4H5M3 6H5M15 6V4H13M15 6H13M9 15C12 15 14 13 14 13V11H12M12 11V13H14M9 15V12" stroke-linecap="round"/></svg>
+            </div>
+            <div class="contact-info-body">
+              <p class="contact-info-label"><span class="fr">Téléphone</span><span class="en">Phone</span></p>
+              <p class="contact-info-value contact-info-phone"><a href="tel:+33478421563" class="contact-phone-link">04 78 42 15 63</a></p>
+              <p class="contact-info-hint" id="hoursStatus" style="margin-top: 8px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 500;"></p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 5L12 13L22 5" stroke-linecap="round"/></svg>
+            </div>
+            <div class="contact-info-body">
+              <p class="contact-info-label">Email</p>
+              <p class="contact-info-value" style="font-size: 14px; color: var(--gray);">contact@laroque-fontenay-dentaire.fr</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6V12L16 14" stroke-linecap="round"/></svg>
+            </div>
+            <div class="contact-info-body">
+              <p class="contact-info-label"><span class="fr">Horaires</span><span class="en">Hours</span></p>
+              <p class="contact-info-value">
+                <span class="fr">Lun - Jeu : 9h - 13h / 14h - 18h<br>Ven : 9h - 13h</span>
+                <span class="en">Mon - Thu : 9am - 1pm / 2pm - 6pm<br>Fri : 9am - 1pm</span>
+              </p>
+              <p class="contact-info-hint" style="font-style: italic;"><span class="fr">Fermé le samedi et le dimanche</span><span class="en">Closed Saturday and Sunday</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accès & Transports -->
+        <div class="contact-access">
+          <div class="contact-access-sep"></div>
+          <p class="section-label"><span class="fr">ACCÈS</span><span class="en">ACCESS</span></p>
+          <div class="contact-access-list">
+            <div class="contact-access-item">
+              <span class="contact-access-badge">M</span>
+              <p><span class="fr"><strong>Métro</strong> Ligne A - Station Foch (10 min à pied) · Ligne C - Station Croix-Rousse (12 min)</span><span class="en"><strong>Metro</strong> Line A - Foch Station (10 min walk) · Line C - Croix-Rousse Station (12 min)</span></p>
+            </div>
+            <div class="contact-access-item">
+              <span class="contact-access-badge">B</span>
+              <p><span class="fr"><strong>Bus</strong> C5 - Arrêt Quai Sarrail · C13 - Arrêt Général Sarrail</span><span class="en"><strong>Bus</strong> C5 - Quai Sarrail Stop · C13 - Général Sarrail Stop</span></p>
+            </div>
+            <div class="contact-access-item">
+              <span class="contact-access-badge">P</span>
+              <p><span class="fr"><strong>Parking</strong> Q-Park Saint-Clair · Parking rue de Sèze</span><span class="en"><strong>Parking</strong> Q-Park Saint-Clair · Rue de Sèze Parking</span></p>
+            </div>
+            <div class="contact-access-item">
+              <span class="contact-access-badge">V</span>
+              <p><span class="fr"><strong>Vélo'v</strong> Station n°6001 - Quai de la Saône (2 min)</span><span class="en"><strong>Vélo'v</strong> Station #6001 - Quai de la Saône (2 min)</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carte -->
+        <div class="contact-map">
+          <img src="images/quartier-lyon.webp" alt="Quai du Général Sarrail, Lyon 6ème" style="width:100%;height:240px;object-fit:cover;display:block;border-radius:4px;">
+          <a href="https://www.google.com/maps/dir//26+quai+du+Général+Sarrail,+69006+Lyon/@45.7696,4.8386,17z" target="_blank" rel="noopener" class="contact-map-link">
+            <span class="fr">Itinéraire ↗</span>
+            <span class="en">Directions ↗</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- COLONNE DROITE - Formulaire -->
+      <div class="contact-form-wrap reveal reveal-delay-1">
+        <p class="section-label"><span class="fr">FORMULAIRE</span><span class="en">FORM</span></p>
+        <h2 class="section-title" style="font-size: 28px; margin-bottom: 40px;"><span class="fr">Envoyez-nous un message</span><span class="en">Send us a message</span></h2>
+
+        <form class="contact-form" id="contactForm" onsubmit="return handleFormSubmit(event);">
+          <div class="form-row">
+            <div class="form-group-float">
+              <input type="text" id="prenom" name="prenom" required placeholder=" ">
+              <label for="prenom"><span class="fr">Prénom *</span><span class="en">First name *</span></label>
+            </div>
+            <div class="form-group-float">
+              <input type="text" id="nom" name="nom" required placeholder=" ">
+              <label for="nom"><span class="fr">Nom *</span><span class="en">Last name *</span></label>
+            </div>
+          </div>
+
+          <div class="form-group-float">
+            <input type="tel" id="telephone" name="telephone" required placeholder=" ">
+            <label for="telephone"><span class="fr">Téléphone *</span><span class="en">Phone *</span></label>
+          </div>
+
+          <div class="form-group-float">
+            <input type="email" id="email" name="email" required placeholder=" ">
+            <label for="email">Email *</label>
+          </div>
+
+          <div class="form-group-float">
+            <select id="motif" name="motif" required>
+              <option value="" disabled selected></option>
+              <option class="fr">Implantologie</option><option class="en">Implantology</option>
+              <option class="fr">Facettes &amp; Esthétique</option><option class="en">Veneers &amp; Aesthetics</option>
+              <option class="fr">Prothèses sur implant</option><option class="en">Implant prosthetics</option>
+              <option class="fr">Autre projet</option><option class="en">Other project</option>
+            </select>
+            <label for="motif"><span class="fr">Motif de la demande *</span><span class="en">Reason for contact *</span></label>
+          </div>
+
+          <div class="form-group-float">
+            <textarea id="traitement" name="traitement" rows="3" placeholder=" "></textarea>
+            <label for="traitement"><span class="fr">Traitement envisagé</span><span class="en">Treatment envisaged</span></label>
+          </div>
+
+          <div class="form-group-float">
+            <textarea id="message" name="message" rows="3" placeholder=" "></textarea>
+            <label for="message">Message</label>
+          </div>
+
+          <label class="form-rgpd">
+            <input type="checkbox" name="rgpd" required>
+            <span class="fr">J'accepte que mes données soient utilisées pour me recontacter.</span>
+            <span class="en">I agree that my data will be used to contact me back.</span>
+          </label>
+
+          <button type="submit" class="btn-cta btn-cta-full" id="formSubmitBtn">
+            <span class="fr">Envoyer ma demande</span>
+            <span class="en">Send my request</span>
+          </button>
+
+          <!-- État de succès caché -->
+          <div class="form-success" id="formSuccess">
+            <div class="form-success-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 12L11 15L16 9" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="form-success-title"><span class="fr">Merci</span><span class="en">Thank you</span></h3>
+            <p class="form-success-text">
+              <span class="fr">Votre demande a bien été transmise. Notre équipe vous recontacte sous 24 heures ouvrées.</span>
+              <span class="en">Your request has been sent. Our team will get back to you within 24 business hours.</span>
+            </p>
+            <a href="index.html" class="btn-outline" style="margin-top: 24px;">
+              <span class="fr">Retour à l'accueil</span>
+              <span class="en">Back to home</span>
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 3. RÉASSURANCE ===== -->
+<section class="contact-reassurance">
+  <div class="container">
+    <div class="reassurance-grid">
+      <div class="reassurance-item reveal">
+        <div class="reassurance-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 12L11 15L16 9" stroke-linecap="round"/></svg>
+        </div>
+        <p class="reassurance-text"><span class="fr">Première consultation sans engagement</span><span class="en">First consultation without commitment</span></p>
+      </div>
+      <div class="reassurance-item reveal reveal-delay-1">
+        <div class="reassurance-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="5"/><path d="M12 7V12L15 14" stroke-linecap="round"/></svg>
+        </div>
+        <p class="reassurance-text"><span class="fr">Diagnostic complet avec scanner CBCT</span><span class="en">Complete diagnosis with CBCT scanner</span></p>
+      </div>
+      <div class="reassurance-item reveal reveal-delay-2">
+        <div class="reassurance-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6C5 2 4 3 4 4V20C4 21 5 22 6 22H18C19 22 20 21 20 20V8L14 2Z"/><path d="M14 2V8H20" stroke-linecap="round"/><path d="M16 13H8M16 17H8M10 9H8" stroke-linecap="round"/></svg>
+        </div>
+        <p class="reassurance-text"><span class="fr">Devis personnalisé établi après consultation</span><span class="en">Personalized quote after consultation</span></p>
+      </div>
+      <div class="reassurance-item reveal reveal-delay-3">
+        <div class="reassurance-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M4 12H20M12 4C14 6 14 10 12 12C10 14 10 18 12 20" stroke-linecap="round"/></svg>
+        </div>
+        <p class="reassurance-text"><span class="fr">Équipe bilingue français / anglais</span><span class="en">Bilingual French / English team</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 4. CTA TÉLÉPHONE ===== -->
+<section class="cta-phone">
+  <div class="container" style="text-align: center;">
+    <p class="cta-phone-label"><span class="fr">Vous préférez nous appeler ?</span><span class="en">Prefer to call us?</span></p>
+    <a href="tel:+33478421563" class="cta-phone-number">04 78 42 15 63</a>
+    <p class="cta-phone-hours">
+      <span class="fr">Lun-Jeu 9h-13h / 14h-18h, Ven 9h-13h</span>
+      <span class="en">Mon-Thu 9am-1pm / 2pm-6pm, Fri 9am-1pm</span>
+    </p>
+    <button class="btn-cta btn-cta-light" onclick="document.getElementById('modal-proto').classList.add('open'); document.body.style.overflow='hidden';" style="margin-top: 24px;">
+      <span class="fr">Réserver un appel</span>
+      <span class="en">Book a call</span>
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5.5" stroke="currentColor"/><path d="M6 4V8M4 6H8" stroke="currentColor" stroke-width="1.2"/></svg>
+    </button>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer section-dark">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand">Laroque <span style="color:var(--sage);">&amp;</span> Fontenay</p>
+        <p class="footer-desc"><span class="fr">Cabinet dentaire d'excellence dédié à l'implantologie, l'esthétique dentaire et les soins conservateurs.</span><span class="en">Dental practice of excellence dedicated to implantology, dental aesthetics and conservative care.</span></p>
+        <p class="footer-address">26 quai du Général Sarrail<br>69006 Lyon</p>
+      </div>
+      <div>
+        <p class="footer-col-title"><span class="fr">Soins</span><span class="en">Treatments</span></p>
+        <ul class="footer-links">
+          <li><a href="implantologie.html"><span class="fr">Implantologie</span><span class="en">Implantology</span></a></li>
+          <li><a href="facettes.html"><span class="fr">Facettes</span><span class="en">Veneers</span></a></li>
+          <li><a href="protheses.html"><span class="fr">Prothèses</span><span class="en">Prosthodontics</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title"><span class="fr">Cabinet</span><span class="en">Practice</span></p>
+        <ul class="footer-links">
+          <li><a href="equipe.html"><span class="fr">L'Équipe</span><span class="en">The Team</span></a></li>
+          <li><a href="cabinet.html"><span class="fr">Le Cabinet</span><span class="en">The Practice</span></a></li>
+          <li><a href="technologies.html"><span class="fr">Technologies</span><span class="en">Technologies</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Newsletter</p>
+        <p class="footer-desc" style="margin-bottom: 16px;"><span class="fr">Restez informé de nos actualités et conseils dentaires.</span><span class="en">Stay informed about our news and dental advice.</span></p>
+        <button class="btn-outline btn-outline-light" data-modal="newsletter">Newsletter</button>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; Laroque &amp; Fontenay. <span class="fr">Tous droits réservés.</span><span class="en">All rights reserved.</span></p>
+      <div class="footer-bottom-links">
+        <a href="#"><span class="fr">Mentions légales</span><span class="en">Legal notices</span></a>
+        <a href="#"><span class="fr">Confidentialité</span><span class="en">Privacy</span></a>
+      </div>
+    </div>
+    <p class="footer-rpps">RPPS : 100012345678</p>
+    <p class="footer-fictif">Site fictif - prototype de démonstration</p>
+  </div>
+</footer>
+
+<!-- ===== MODAL PROTO ===== -->
+<div class="modal-overlay" id="modal-proto">
+  <div class="modal-box modal-proto-box">
+    <button class="modal-close" onclick="document.getElementById('modal-proto').classList.remove('open'); document.body.style.overflow='';" aria-label="Fermer">&times;</button>
+    <div class="modal-proto-content">
+      <div class="fr">
+        <h3 class="modal-title">Réservation d'appel</h3>
+        <p style="margin-bottom:24px;color:var(--text-secondary);font-size:16px;">Cette fonctionnalité peut être connectée à votre système de gestion préféré. Nous configurons l'intégration selon vos outils.</p>
+        <div class="proto-grid">
+          <div class="proto-badge"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L7 12L13 4" stroke="#3D5A4C" stroke-width="1.5" stroke-linecap="round"/></svg>Doctolib</div>
+          <div class="proto-badge"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L7 12L13 4" stroke="#3D5A4C" stroke-width="1.5" stroke-linecap="round"/></svg>Nhale</div>
+          <div class="proto-badge"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L7 12L13 4" stroke="#3D5A4C" stroke-width="1.5" stroke-linecap="round"/></svg>Dentally</div>
+          <div class="proto-badge"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L7 12L13 4" stroke="#3D5A4C" stroke-width="1.5" stroke-linecap="round"/></svg>Google Agenda</div>
+          <div class="proto-badge"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L7 12L13 4" stroke="#3D5A4C" stroke-width="1.5" stroke-linecap="round"/></svg>Outlook</div>
+          <div class="proto-badge"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L7 12L13 4" stroke="#3D5A4C" stroke-width="1.5" stroke-linecap="round"/></svg>API métier</div>
+        </div>
+        <p style="margin-top:24px;font-size:14px;color:var(--gray);font-style:italic;">En tant que cabinet partenaire, nous assurons la connexion et la synchronisation de vos rendez-vous.</p>
+        <button class="btn-outline" onclick="document.getElementById('modal-proto').classList.remove('open'); document.body.style.overflow='';" style="width:100%;margin-top:24px;">Fermer</button>
+      </div>
+      <div class="en">
+        <h3 class="modal-title">Call booking</h3>
+        <p style="margin-bottom:24px;color:var(--text-secondary);font-size:16px;">This feature can be connected to your preferred management system. We configure the integration according to your tools.</p>
+        <div class="proto-grid">
+          <div class="proto-badge"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L7 12L13 4" stroke="#3D5A4C" stroke-width="1.5" stroke-linecap="round"/></svg>Doctolib</div>
+          <div class="proto-badge"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L7 12L13 4" stroke="#3D5A4C" stroke-width="1.5" stroke-linecap="round"/></svg>Nhale</div>
+          <div class="proto-badge"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L7 12L13 4" stroke="#3D5A4C" stroke-width="1.5" stroke-linecap="round"/></svg>Dentally</div>
+          <div class="proto-badge"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L7 12L13 4" stroke="#3D5A4C" stroke-width="1.5" stroke-linecap="round"/></svg>Google Calendar</div>
+          <div class="proto-badge"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L7 12L13 4" stroke="#3D5A4C" stroke-width="1.5" stroke-linecap="round"/></svg>Outlook</div>
+          <div class="proto-badge"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L7 12L13 4" stroke="#3D5A4C" stroke-width="1.5" stroke-linecap="round"/></svg>Custom API</div>
+        </div>
+        <p style="margin-top:24px;font-size:14px;color:var(--gray);font-style:italic;">As a partner practice, we ensure the connection and synchronization of your appointments.</p>
+        <button class="btn-outline" onclick="document.getElementById('modal-proto').classList.remove('open'); document.body.style.overflow='';" style="width:100%;margin-top:24px;">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ===== INDICATEUR OUVERT/FERMÉ ===== */
+(function() {
+  var now = new Date();
+  var day = now.getDay(); // 0=dim, 1=lun, ..., 6=sam
+  var hour = now.getHours();
+  var isOpen = false;
+  // Lun(1) - Jeu(4): 9-13 et 14-18
+  // Ven(5): 9-13
+  // Sam(6), Dim(0): fermé
+  if (day >= 1 && day <= 4) {
+    if ((hour >= 9 && hour < 13) || (hour >= 14 && hour < 18)) isOpen = true;
+  } else if (day === 5) {
+    if (hour >= 9 && hour < 13) isOpen = true;
+  }
+  var el = document.getElementById('hoursStatus');
+  if (el) {
+    var fr = document.body.classList.contains('lang-fr');
+    var label = isOpen ? (fr ? 'Ouvert maintenant' : 'Open now') : (fr ? 'Fermé maintenant' : 'Closed now');
+    var cls = isOpen ? 'status-open' : 'status-closed';
+    el.innerHTML = '<span class="status-dot ' + cls + '"></span>' + label;
+    el.className = cls;
+  }
+})();
+
+/* ===== PRÉ-REMPLISSAGE MOTIF (URL param) ===== */
+(function() {
+  var params = new URLSearchParams(window.location.search);
+  var from = params.get('from');
+  if (!from) return;
+  var select = document.getElementById('motif');
+  if (!select) return;
+  var options = select.querySelectorAll('option');
+  for (var i = 0; i < options.length; i++) {
+    var opt = options[i];
+    var txt = opt.textContent.toLowerCase();
+    if (from === 'implantologie' && (txt.indexOf('implant') !== -1)) { opt.selected = true; break; }
+    if (from === 'facettes' && (txt.indexOf('facette') !== -1 || txt.indexOf('veneer') !== -1)) { opt.selected = true; break; }
+    if (from === 'protheses' && (txt.indexOf('proth') !== -1 || txt.indexOf('prosthetic') !== -1)) { opt.selected = true; break; }
+  }
+})();
+
+/* ===== FEEDBACK FORMULAIRE ===== */
+function handleFormSubmit(e) {
+  e.preventDefault();
+  var form = document.getElementById('contactForm');
+  var btn = document.getElementById('formSubmitBtn');
+  var success = document.getElementById('formSuccess');
+  if (!form || !btn || !success) return false;
+  // Validation basique
+  var inputs = form.querySelectorAll('input[required], select[required], textarea[required]');
+  var valid = true;
+  for (var i = 0; i < inputs.length; i++) {
+    if (!inputs[i].value.trim()) {
+      inputs[i].classList.add('error');
+      valid = false;
+    } else {
+      inputs[i].classList.remove('error');
+    }
+  }
+  var rgpd = form.querySelector('input[name="rgpd"]');
+  if (rgpd && !rgpd.checked) {
+    rgpd.parentNode.style.color = '#C0392B';
+    valid = false;
+  }
+  if (!valid) return false;
+  // Simuler envoi
+  btn.disabled = true;
+  btn.innerHTML = '<span class="fr">Envoi en cours...</span><span class="en">Sending...</span>';
+  setTimeout(function() {
+    // Cacher tous les champs
+    var children = form.children;
+    for (var j = 0; j < children.length; j++) {
+      if (children[j].id !== 'formSuccess') {
+        children[j].style.display = 'none';
+      }
+    }
+    success.classList.add('show');
+  }, 1200);
+  return false;
+}
+</script>
+
+<script src="js/editorial-v7.js?v=23"></script>
+</body>
+</html>
