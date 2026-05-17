@@ -704,7 +704,7 @@ body {
 }
 
 /* ============================================
-   STATS – MARQUEE ÉDITORIAL (§2 AU QUOTIDIEN)
+   STATS — MARQUEE ÉDITORIAL (§2 AU QUOTIDIEN)
    ============================================ */
 .section-divider {
   width: 36px;
@@ -895,7 +895,7 @@ body {
 .card-link:hover::after { width: 100%; }
 
 /* ============================================
-   MÉTHODE – Split layout : header gauche / timeline droite
+   MÉTHODE — Split layout : header gauche / timeline droite
    ============================================ */
 .method-container {
   max-width: 1100px;
@@ -1063,7 +1063,7 @@ body {
 /* ============================================
    CAS CLINIQUES
    ============================================ */
-/* CAS CLINIQUES – Format editorial 1 grand + 2 mini */
+/* CAS CLINIQUES — Format editorial 1 grand + 2 mini */
 
 .cases-spotlight {
   max-width: 1200px;
@@ -1248,7 +1248,7 @@ body {
 }
 
 /* ============================================
-   TECHNOLOGIES – Layout split editorial
+   TECHNOLOGIES — Layout split editorial
    ============================================ */
 .tech-container {
   max-width: 1200px;
@@ -1342,102 +1342,151 @@ body {
 /* ============================================
    MARQUEE TÉMOIGNAGES
    ============================================ */
-.marquee-wrap {
-  overflow: hidden;
-  position: relative;
-}
-.marquee-track {
-  display: flex;
-  gap: 32px;
-  animation: marquee-scroll 40s linear infinite;
-}
+/* AVIS GOOGLE — bloc conforme deontologie */
 
-#temoignages .temoignages-header {
+.reviews-container {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 24px;
   text-align: center;
-  margin-bottom: 56px;
 }
 
-#temoignages .section-label {
-  color: var(--gray-light);
+.reviews-header {
+  margin-bottom: 48px;
 }
 
-#temoignages .section-title {
-  color: var(--cream);
-}
-
-#temoignages .section-divider {
+.section-divider-light {
+  background: var(--sage);
+  opacity: 0.6;
   margin-left: auto;
   margin-right: auto;
 }
-@keyframes marquee-scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-/* TEMOIGNAGES – Typographie editoriale fond noir */
-.marquee-item {
-  position: relative;
-  flex-shrink: 0;
-  background: transparent;
-  border: 0;
-  border-radius: 0;
-  padding: 32px 28px 28px;
-  min-width: 340px;
-  max-width: 380px;
-}
 
-.marquee-quote-mark {
-  position: absolute;
-  top: -12px;
-  left: 18px;
-  font-family: var(--font-display);
-  font-size: 110px;
-  line-height: 1;
-  color: var(--sage);
-  opacity: 0.18;
-  font-style: normal;
-  pointer-events: none;
-  user-select: none;
-}
-
-.marquee-text {
-  position: relative;
-  font-size: 14.5px;
-  line-height: 1.7;
+.section-title-light,
+.section-subtitle-light {
   color: var(--cream);
-  margin: 0 0 20px;
-  font-style: italic;
-  font-family: var(--font-display);
-  z-index: 1;
 }
 
-.marquee-author {
-  position: relative;
-  font-size: 12.5px;
-  line-height: 1.4;
+.section-subtitle-light {
+  opacity: 0.78;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reviews-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  padding: 40px 48px;
+  border: 1px solid rgba(245, 243, 239, 0.18);
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.reviews-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.reviews-rating {
+  font-family: var(--font-display);
+  font-size: 56px;
+  line-height: 1;
+  color: var(--cream);
+  font-weight: 400;
+}
+
+.reviews-stars {
+  display: flex;
+}
+
+.reviews-count {
+  font-size: 13px;
   color: var(--cream);
   opacity: 0.7;
-  letter-spacing: 0.03em;
-  margin: 0;
-  padding-top: 16px;
-  border-top: 1px solid rgba(245, 243, 239, 0.18);
-  font-family: var(--font-display);
-  font-style: normal;
-  z-index: 1;
+  letter-spacing: 0.02em;
 }
 
-@media (max-width: 599px) {
-  .marquee-item {
-    padding: 36px 32px 32px;
-    min-width: 320px;
-    max-width: 360px;
+.reviews-divider-v {
+  width: 1px;
+  align-self: stretch;
+  background: rgba(245, 243, 239, 0.18);
+}
+
+.reviews-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  text-align: left;
+}
+
+.reviews-google {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.reviews-google-label {
+  font-size: 14px;
+  color: var(--cream);
+  opacity: 0.85;
+}
+
+.reviews-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 15px;
+  color: var(--cream);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(245, 243, 239, 0.4);
+  padding-bottom: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.reviews-link:hover {
+  border-bottom-color: var(--cream);
+}
+
+.reviews-link .arrow {
+  font-style: normal;
+  font-size: 14px;
+}
+
+.reviews-note {
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: var(--cream);
+  opacity: 0.55;
+  max-width: 620px;
+  margin: 36px auto 0;
+  font-style: italic;
+}
+
+@media (max-width: 767px) {
+  .reviews-card {
+    flex-direction: column;
+    gap: 28px;
+    padding: 32px 24px;
   }
-  .marquee-quote-mark {
-    font-size: 120px;
-    top: -12px;
-    left: 18px;
+  .reviews-divider-v {
+    width: 60%;
+    height: 1px;
+    align-self: center;
   }
-  .marquee-text {
-    font-size: 14px;
+  .reviews-meta {
+    align-items: center;
+    text-align: center;
+  }
+  .reviews-rating {
+    font-size: 48px;
   }
 }
 
@@ -1490,7 +1539,7 @@ body {
 }
 
 /* ============================================
-   CTA FINAL – Composition asymetrique
+   CTA FINAL — Composition asymetrique
    ============================================ */
 .cta-final-grid {
   max-width: 1200px;
@@ -2310,11 +2359,6 @@ img.loaded { opacity: 1; }
 .menu-overlay.open .menu-nav-link:nth-child(5) { transition-delay: 0.29s; }
 .menu-overlay.open .menu-nav-link:nth-child(6) { transition-delay: 0.35s; }
 
-/* ===== MARQUEE PAUSE HOVER ===== */
-.marquee-wrap:hover .marquee-track {
-  animation-play-state: paused;
-}
-
 /* ===== CARD MICRO-INTERACTIONS ===== */
 .card-img-top img {
   transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
@@ -2645,8 +2689,6 @@ img.loaded { opacity: 1; }
     font-size: 20px;
   }
 
-  .marquee-track { animation-duration: 30s; }
-
   .modal-box { padding: 24px; margin: 16px; }
   .modal-title { font-size: 22px; }
   .modal-cta { flex-direction: column; }
@@ -2897,7 +2939,7 @@ img.loaded { opacity: 1; }
 }
 
 @media (max-width: 767px) {
-  /* §4 Equipe – refonte mobile : 3 praticiens a egalite, ordre TEXTE -> IMAGE */
+  /* §4 Equipe — refonte mobile : 3 praticiens a egalite, ordre TEXTE -> IMAGE */
   /* .team-info-main est un frere de .team-spotlight-grid : reordonner via flex sur .team-spotlight */
   .team-spotlight {
     display: flex;
@@ -2985,11 +3027,11 @@ img.loaded { opacity: 1; }
 }
 
 /* ============================================
-   PATCH RESPONSIVE – 9 corrections mobile / tablette
+   PATCH RESPONSIVE — 9 corrections mobile / tablette
    Desktop (>=1024px) intact
    ============================================ */
 
-/* P1 – HERO : empêcher la superposition des mots du split-title sur mobile */
+/* P1 — HERO : empêcher la superposition des mots du split-title sur mobile */
 @media (max-width: 767px) {
   .hero-split-title { line-height: 1.05; }
   .split-line-1 {
@@ -3013,7 +3055,7 @@ img.loaded { opacity: 1; }
   }
 }
 
-/* P2 – HEADER mobile : bouton téléphone compact, masquer libellé "Appel" */
+/* P2 — HEADER mobile : bouton téléphone compact, masquer libellé "Appel" */
 @media (max-width: 767px) {
   .header-right-mobile {
     align-items: center;
@@ -3037,7 +3079,7 @@ img.loaded { opacity: 1; }
   }
 }
 
-/* P3 – HERO : titre reveal "pensée pour durer" – réduire taille sur très petits écrans */
+/* P3 — HERO : titre reveal "pensée pour durer" — réduire taille sur très petits écrans */
 @media (max-width: 599px) {
   .reveal-line {
     font-size: clamp(22px, 7vw, 30px);
@@ -3045,7 +3087,7 @@ img.loaded { opacity: 1; }
   }
 }
 
-/* P4 – §3 STATS MARQUEE : items moins larges sur mobile */
+/* P4 — §3 STATS MARQUEE : items moins larges sur mobile */
 @media (max-width: 599px) {
   .stats-marquee-item {
     padding: 0 12px;
@@ -3061,13 +3103,13 @@ img.loaded { opacity: 1; }
   }
 }
 
-/* P5 – HERO : masquer le scroll-indicator "Découvrir" sur mobile/tablette
+/* P5 — HERO : masquer le scroll-indicator "Découvrir" sur mobile/tablette
    (le doigt scrolle naturellement et ça chevauchait §4) */
 @media (max-width: 1023px) {
   .hero-scroll-indicator { display: none; }
 }
 
-/* P6 – §4 ÉQUIPE : grand portrait beaucoup plus compact sur mobile */
+/* P6 — §4 ÉQUIPE : grand portrait beaucoup plus compact sur mobile */
 @media (max-width: 599px) {
   #equipe .team-portrait-large {
     aspect-ratio: 1 / 1;
@@ -3075,7 +3117,7 @@ img.loaded { opacity: 1; }
   }
 }
 
-/* P7 – §4 ÉQUIPE : dots de navigation – zone tactile 44px */
+/* P7 — §4 ÉQUIPE : dots de navigation — zone tactile 44px */
 @media (max-width: 767px) {
   .team-dots { gap: 4px; margin-top: 32px; }
   .team-dot {
@@ -3105,7 +3147,7 @@ img.loaded { opacity: 1; }
   }
 }
 
-/* P8 – §6 SERVICES : séparation visuelle entre cards sur mobile */
+/* P8 — §6 SERVICES : séparation visuelle entre cards sur mobile */
 @media (max-width: 599px) {
   .cards-grid { gap: 40px; }
   .service-card:not(:last-child) {
@@ -3114,34 +3156,12 @@ img.loaded { opacity: 1; }
   }
 }
 
-/* P9 – §10 TÉMOIGNAGES : items plus étroits pour rester lisibles dans le mask */
-@media (max-width: 599px) {
-  .marquee-item {
-    padding: 28px 22px 22px;
-    min-width: 280px;
-    max-width: 320px;
-  }
-  .marquee-quote-mark {
-    font-size: 92px;
-    top: -8px;
-    left: 14px;
-  }
-  .marquee-text {
-    font-size: 13.5px;
-    line-height: 1.65;
-    margin-bottom: 16px;
-  }
-  .marquee-author {
-    font-size: 11.5px;
-  }
-}
-
-/* P10 – HEADER responsive 3 paliers
+/* P10 — HEADER responsive 3 paliers
    ≤900px   : mode burger (étend le mode mobile de 767 à 900)
    901-1199 : mode compact tablette paysage (tagline cachée, gaps réduits)
    ≥1200px  : mode complet (inchangé) */
 
-/* PALIER 1 – tablette portrait (768-900) = même mode burger que mobile.
+/* PALIER 1 — tablette portrait (768-900) = même mode burger que mobile.
    Override les règles tablette existantes (768-1023) qui affichent header-nav/right. */
 @media (min-width: 768px) and (max-width: 900px) {
   .header-inner { padding: 0 24px; height: 64px; }
@@ -3168,7 +3188,7 @@ img.loaded { opacity: 1; }
   .btn-cta-mobile { display: none; }
 }
 
-/* PALIER 2 – tablette paysage (901-1199) : compact mais tout visible.
+/* PALIER 2 — tablette paysage (901-1199) : compact mais tout visible.
    Override la règle desktop ≥1024 et le mode mobile ≤767. */
 @media (min-width: 901px) and (max-width: 1199px) {
   .header-nav { display: flex; }

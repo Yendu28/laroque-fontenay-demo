@@ -5,7 +5,7 @@
      CUSTOM CURSOR (desktop uniquement)
      ========================================== */
   function initCursor() {
-    return; // Desactive – custom cursor CSS retire (passe-finition 2026-05)
+    return; // Desactive — custom cursor CSS retire (passe-finition 2026-05)
     if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
     var cursor = document.createElement('div');
     cursor.className = 'custom-cursor';
